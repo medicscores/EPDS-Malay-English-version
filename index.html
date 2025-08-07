@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDINBURGH POSTNATAL DEPRESSION SCALE (BAHASA MELAYU/ENGLISH)</title>
+<style>
+    body { font-family: Arial; font-size: 16px; color: #363535; margin: 20px; max-width: 1250px; background-color: white; }
+    h2 { font-family: Verdana; font-size: 26px; color: #595959; margin: 0; padding: 0; }
+    h3 { font-family: Verdana; font-size: 24px; color: #595959; margin: 0; padding: 0; margin-bottom: 10px; }
+    h4 { font-weight: normal; font-family: Trebuchet MS; font-size: 16px; color: #858284; margin: 0; padding: 0; margin-bottom: 10px; }
+    h5 { font-family: Helvetica; font-size: 16px; font-weight: bold; color: white; margin: 0; padding: 0; }
+
+    .textbox1 { margin-bottom: 0; margin-top: 20px; font-weight: bold; font-family: Helvetica; font-size: 14px; color: white; white-space: pre-line; width: 100%; max-width: 1250px; height: 20px; padding: 6px 10px; border: 1px solid #363535; border-color:#e3d8df; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); background-color: #727373; }
+    .textbox2 { display: inline-block; margin-top: 5px; background-color: #ab2b84; color: white; font-family: Trebuchet MS; font-size: 16px; padding: 8px 8px; border: none; margin-bottom: 5px; max-width: 1250px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); }
+    .textbox3 { display: inline-block; margin-top: 5px; background-color: green; color: white; font-family: Trebuchet MS; font-size: 16px; padding: 8px 8px; border: none; margin-bottom: 5px; max-width: 1250px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); }
+
+    .question { margin-bottom: 20px; }
+    .question label { font-weight: bold; display: block; margin-bottom: 20px; }
+    .option { margin-left: 15px; margin-bottom: 3px; }
+    button { font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #e0dcdf; color: #4f4d4e; padding: 10px 20px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); border: 1px solid #BEBBBD; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #e0dcdf ; color: white; }
+    #resultBox { margin-top: 0; font-weight: bold; font-family: Trebuchet MS; font-size: 16px; color: #f7eaf3; white-space: pre-line; width: 100%; max-width: 1250px; height: 200px; padding: 10px; border: 1px solid #363535; border-color:#e3d8df; background-color: #bc559d; }
+    #alert { margin-top: 5px; color: #b71c1c; font-family: Arial; font-size: 16px; font-weight: bold; width: 100%; max-width: 1150px; background-color: #ffebee; padding: 10px; border: 1px solid #363535; border-color:#e3d8df; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); display: none; }   
+
+</style>
+</head>
+<body>
+
+<h2><strong>SKALA KEMURUNGAN SELEPAS BERSALIN EDINBURGH</strong></h2>
+<h3><strong><i>Edinburgh Postnatal Depression Scale (EPDS)</i></strong></h3>
+<h4>Saringan kemurungan selepas bersalin di kalangan wanita. <i>Screening for postnatal depression in women</i></h4>
+
+<div class="textbox2"><strong>ARAHAN:</strong> Sila tandakan jawapan yang paling hampir bagi menggambarkan apa yang telah anda rasa anda rasakan <strong>DALAM MASA TUJUH HARI</strong> yang lalu dan bukan sekadar hari ini sahaja.<br><br><strong><i>INSTRUCTION:</i></strong> <i>Please tick the answer that best describes how you have been feeling during the <strong>PAST SEVEN DAYS</strong>, and not just today.</i></div>
+
+
+<div class="textbox3"><strong>PENTING: </strong>Penilaian klinikal adalah penting dalam mentafsir keputusan saringan. Markah EPDS yang sangat tinggi mungkin menandakan keadaan krisis, isu kesihatan mental lain atau trauma yang belum diselesaikan.<br><br><strong><i>IMPORTANT:</i></strong> <i>Clinical judgement is integral to interpreting screening result. A very high EPDS score could suggest a crisis, other mental health issues or unresolved trauma.</i></div>
+<hr>
+
+
+<form id="epdsForm">
+
+    <!-- Q1 -->
+    <div class="question">
+        <label>1. Saya dapat ketawa dan melihat kelucuan pada sesuatu perkara. <i>I have been able to laugh and see the funny side of things.</i></label>      
+        <div class="option"><input type="radio" name="q1" value="0"> Sebanyak mana biasa. <i>As much as I always could</i></div>
+        <div class="option"><input type="radio" name="q1" value="1"> Kurang daripada biasa. <i>Not quite so much now</i></div>
+        <div class="option"><input type="radio" name="q1" value="2"> Sangat kurang daripada biasa. <i>Definitely not so much now</i></div>
+        <div class="option"><input type="radio" name="q1" value="3"> Tiada langsung. <i>Not at all</i></div>
+    </div>
+    <hr>
+
+    <!-- Q2 -->
+    <div class="question">
+        <label>2. Saya menanti dengan penuh harapan bagi mendapat kenikmatan apabila melakukan sesuatu perkara. <i>I have looked forward with
+enjoyment to things.</i></label>
+        <div class="option"><input type="radio" name="q2" value="0"> Sebanyak mana biasa. <i>As much as I ever did</i></div>
+        <div class="option"><input type="radio" name="q2" value="1"> Kurang daripada biasa. <i>Rather less than I used to</i></div>
+        <div class="option"><input type="radio" name="q2" value="2"> Sangat kurang daripada biasa. <i>Definitely less than I used to</i></div>
+        <div class="option"><input type="radio" name="q2" value="3"> Tiada langsung. <i>Hardly at all</i></div>
+    </div>
+    <hr>
+
+    <!-- Q3 -->
+    <div class="question">
+        <label>3. Saya menyalahkan diri sendiri secara tidak sepatutnya apabila sesuatu yang tidak kena terjadi. <i>I have blamed myself unnecessarily when things went wrong.</i></label>
+        <div class="option"><input type="radio" name="q3" value="3"> Ya, sepanjang masa. <i>Yes, most of the time</i></div>
+        <div class="option"><input type="radio" name="q3" value="2"> Ya, kadangkala. <i>Yes, some of the time</i></div>
+        <div class="option"><input type="radio" name="q3" value="1"> Jarang sekali. <i>Not very often</i></div>
+        <div class="option"><input type="radio" name="q3" value="0"> Tiada pernah. <i>No, never</i></div>
+    </div>
+    <hr>
+
+    <!-- Q4 -->
+    <div class="question">
+        <label>4. Saya berasa risau atau bimbang tanpa sebab. <i>I have been anxious or worried for no good reason.</i></label>
+        <div class="option"><input type="radio" name="q4" value="0"> Tidak langsung. <i>No, no at all</i></div>
+        <div class="option"><input type="radio" name="q4" value="1"> Amat jarang sekali. <i>Hardly ever</i></div>
+        <div class="option"><input type="radio" name="q4" value="2"> Ya, kadangkala. <i>Yes, sometimes</i></div>
+        <div class="option"><input type="radio" name="q4" value="3"> Ya, sangat kerap. <i>Yes, very often</i></div>
+    </div>
+    <hr>
+
+    <!-- Q5 -->
+    <div class="question">
+        <label>5. Saya berasa takut atau panik tanpa sebab. <i>I have felt scared or panicky for no good reason.</i></label>
+        <div class="option"><input type="radio" name="q5" value="3"> Ya, sangat kerap. <i>Yes, quite a lot</i></div>
+        <div class="option"><input type="radio" name="q5" value="2"> Ya, kadangkala. <i>Yes, sometimes</i></div>
+        <div class="option"><input type="radio" name="q5" value="1"> Jarang sekali. <i>No, not so much</i></div>
+        <div class="option"><input type="radio" name="q5" value="0"> Tidak pernah. <i>No, not at all</i></div>
+    </div>
+    <hr>
+
+    <!-- Q6 -->
+    <div class="question">
+        <label>6. Saya dibebani oleh terlalu banyak masalah. <i>Things have been getting on top of me. </i></label>
+        <div class="option"><input type="radio" name="q6" value="3"> Ya, kebanyakan masa saya tidak berupaya menanganinya langsung. <i>Yes, most of the time I haven’t been able to cope at all</i></div>
+        <div class="option"><input type="radio" name="q6" value="2"> Ya, kadangkala saya tidak berupaya menanganinya seperti biasa. <i>Yes, somestimes I haven’t been coping as well as usual</i></div>
+        <div class="option"><input type="radio" name="q6" value="1"> Tidak, kebanyakan masa saya berupaya menanganinya dengan baik. <i>No, most of the time I have coped quite well</i></div>
+        <div class="option"><input type="radio" name="q6" value="0"> Tiada, saya berupaya menangani semua masalah dengan baik pada setiap masa. <i>No, I have been coping as well as ever</i></div>
+    </div>
+    <hr>
+
+    <!-- Q7 -->
+    <div class="question">
+        <label>7. Saya berasa sungguh sedih sehingga saya mengalami kesukaran untuk tidur. <i>I have been so unhappy that I have had difficulty sleeping.</i></label>
+        <div class="option"><input type="radio" name="q7" value="3"> Kebanyakan masa. <i>Yes, most of the time</i></div>
+        <div class="option"><input type="radio" name="q7" value="2"> Kadang-kadang. <i>Yes, sometimes</i></div>
+        <div class="option"><input type="radio" name="q7" value="1"> Jarang-jarang sekali. <i>Not very often</i></div>
+        <div class="option"><input type="radio" name="q7" value="0"> Tidak pernah. <i>No, not at all</i></div>
+    </div>
+    <hr>
+
+    <!-- Q8 -->
+    <div class="question">
+        <label>8. Saya berasa sedih atau serabut. <i>I have felt sad or miserable.</i></label>
+        <div class="option"><input type="radio" name="q8" value="3"> Ya, kebanyakan masa. <i>Yes, most of the time</i></div>
+        <div class="option"><input type="radio" name="q8" value="2"> Ya, agak kerap. <i>Yes, quite often</i></div>
+        <div class="option"><input type="radio" name="q8" value="1"> Jarang-jarang sekali. <i>Not very often</i></div>
+        <div class="option"><input type="radio" name="q8" value="0"> Tidak pernah. <i>No, never</i></div>
+    </div>
+    <hr>
+
+    <!-- Q9 -->
+    <div class="question">
+        <label>9. Saya berasa sangat sedih sehingga saya menangis. <i>I have been so unhappy that I have been crying.</i></label>
+        <div class="option"><input type="radio" name="q9" value="3"> Ya, kebanyakan masa. <i>Yes, most of the time</i></div>
+        <div class="option"><input type="radio" name="q9" value="2"> Ya, agak kerap. <i>Yes, quite often</i></div>
+        <div class="option"><input type="radio" name="q9" value="1"> Hanya sekali sekala. <i>Only occasionally</i></div>
+        <div class="option"><input type="radio" name="q9" value="0"> Tidak pernah. <i>No, never</i></div>
+    </div>
+    <hr>
+
+    <!-- Q10 (Self-harm) -->
+    <div class="question">
+        <label>10. Pernah terlintas di fikiran saya keinginan untuk mencederakan diri sendiri. <i>The thought of harming myself has occured to me.</i> </label>
+        <div class="option"><input type="radio" name="q10" value="3"> Ya, kebanyakan masa. <i>Yes, quite often</i></div>
+        <div class="option"><input type="radio" name="q10" value="2"> Ya, agak kerap. <i>Sometimes</i></div>
+        <div class="option"><input type="radio" name="q10" value="1"> Amat jarang sekali. <i>Hardly ever</i></div>
+        <div class="option"><input type="radio" name="q10" value="0"> Tidak pernah. <i>Never</i></div>
+    </div>
+    <hr>
+    
+    <button type="button" onclick="calculateEPDS()"><strong>SIMPAN/<i>SUBMIT</i></strong></button>
+</form>
+
+<div class="textbox1"><h5>KEPUTUSAN/<i>RESULT</i>:</h5></div>
+<div id="resultBox"></div>
+<div id="alert"></div>
+
+
+<script>
+function calculateEPDS() {
+    let total = 0;
+    let answered = true;
+    
+    for(let i=1; i<=10; i++){
+        let q = document.querySelector('input[name="q'+i+'"]:checked');
+        if(!q){ answered = false; break; }
+        total += parseInt(q.value);
+    }
+
+    
+     if (!answered) {
+        document.getElementById("resultBox").innerHTML = "Sila jawab semua soalan. <i>Please fill out required fields.</i>";
+        document.getElementById("alert").style.display = "none";
+        return;
+    }
+
+
+    // Normal interpretation
+    let interpretation = "";
+    if(total <= 9) interpretation = "Kemungkinan sangat rendah untuk kemurungan. Teruskan pemantauan dan sokongan.\n\n <i>Depression is not likely. Continue monitoring and support.</i>";
+    else if(total <= 12) interpretation = "Anda berkemungkinan menghidapi kemurungan. Sila pergi ke fasiliti kesihatan berhampiran untuk penilaian lanjut.\n\n <i>You may be experiencing depression. Kindly visit the nearest healthcare facility for further evaluation.</i>";
+    else interpretation = "Anda berkemungkinan besar menghidapi kemurungan. Sila pergi ke fasiliti kesihatan berhampiran dalam masa terdekat untuk penilaian lanjut.\n\n <i>You are very likely to be experiencing depression. Please visit the nearest healthcare facility as soon as possible for further evaluation.</i>";
+
+   
+    document.getElementById("resultBox").innerHTML = 
+        "" + total + "/30\n\n " + interpretation;
+
+    
+
+    // Check Q10 safety alert
+    let q10 = document.querySelector('input[name="q10"]:checked').value;
+    let alertBox = document.getElementById("alert");
+
+    if(parseInt(q10) > 0){
+        alertBox.style.display = "block";
+        alertBox.innerHTML = "⚠️ AMARAN: Terdapat pemikiran untuk mencederakan diri sendiri. Sila dapatkan bantuan <u>segera</u> di fasiliti kesihatan berhampiran.<br> <i>⚠️WARNING: There are thoughts of self-harm. Please seek <u>immediate</u> help at the nearest healthcare facility.\n";
+    } else {
+        alertBox.style.display = "none";
+    }
+}
+ 
+
+</script>
+
+</body>
+</html>
