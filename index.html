@@ -47,8 +47,9 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
     margin-top:2px; font-size: 16px; font-family: Helvetica; width: 100%; 
   }
   .option{
-    display:block;
-    align-items:center;
+    display:flex;
+      flex-direction: column;
+    align-items:flex-start; margin-bottom: 8px; 
     gap:5px;
     padding:5px 15px;
     border-radius:10px;
@@ -56,8 +57,9 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
     cursor:pointer; }
     
   .option input[type="radio"]{
-    accent-color: var(--accent);
-  }
+    accent-color: var(--accent);  margin-right: 6px;
+  margin-bottom: 2px;  }
+    
   .option:hover{
     background:rgba(0,0,0,0.02);
   }
@@ -140,8 +142,7 @@ button:hover{background-color: white ; color: #595959; }
          <div class="qtext">Saya dapat ketawa dan melihat kelucuan pada sesuatu perkara. <br><i>I have been able to laugh and see the funny side of things.</i></div> 
         </div>
         <div class="qopts">
-        <label class="option"><input type="radio" name="q1" value="0"> Sebanyak mana biasa. <span class="eng"><i>As much as I always could</i></span>
-    </label>
+        <label class="option"><input type="radio" name="q1" value="0"> Sebanyak mana biasa. <i>As much as I always could</i></label>
         <label class="option"><input type="radio" name="q1" value="1"> Kurang daripada biasa. <i>Not quite so much now</i></label>
         <label class="option"><input type="radio" name="q1" value="2"> Sangat kurang daripada biasa. <i>Definitely not so much now</i></label>
         <label class="option"><input type="radio" name="q1" value="3"> Tiada langsung. <i>Not at all</i></label>
@@ -398,6 +399,7 @@ enjoyment to things.</i></div>
 </div>
 </body>
 </html>
+
 
 
 
