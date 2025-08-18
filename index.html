@@ -53,8 +53,8 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
     padding:5px 15px;
     border-radius:10px;
     border:1px solid transparent;
-    cursor:pointer;
-  }
+    cursor:pointer; }
+    
   .option input[type="radio"]{
     accent-color: var(--accent);
   }
@@ -140,7 +140,8 @@ button:hover{background-color: white ; color: #595959; }
          <div class="qtext">Saya dapat ketawa dan melihat kelucuan pada sesuatu perkara. <br><i>I have been able to laugh and see the funny side of things.</i></div> 
         </div>
         <div class="qopts">
-        <label class="option"><input type="radio" name="q1" value="0"> Sebanyak mana biasa. <i>As much as I always could</i></label>
+        <label class="option"><input type="radio" name="q1" value="0"> Sebanyak mana biasa. <span class="eng"><i>As much as I always could</i></span>
+    </label>
         <label class="option"><input type="radio" name="q1" value="1"> Kurang daripada biasa. <i>Not quite so much now</i></label>
         <label class="option"><input type="radio" name="q1" value="2"> Sangat kurang daripada biasa. <i>Definitely not so much now</i></label>
         <label class="option"><input type="radio" name="q1" value="3"> Tiada langsung. <i>Not at all</i></label>
@@ -353,9 +354,9 @@ enjoyment to things.</i></div>
   }
 
   function interpret(score) {
-        if(score <= 9) return 'Kebarangkalian mengalami kemurungan adalah rendah. Teruskan pemantauan dan sokongan</normal>.<br><i>Depression is not likely. Continue monitoring and support.</i>';
-    if(score <= 12) return 'Anda mungkin mengalami kemurungan. Sila pergi ke fasiliti kesihatan berhampiran untuk penilaian lanjut.<br> <i>You may be experiencing depression. Kindly visit the nearest healthcare facility for further evaluation.</i>';
-    return 'Anda berkemungkinan besar mengalami kemurungan. Sila pergi ke fasiliti kesihatan berhampiran dalam masa terdekat untuk penilaian lanjut.<br> <i>You are very likely to be experiencing depression. Please visit the nearest healthcare facility as soon as possible for further evaluation.</i>';
+        if(score <= 9) return 'Kebarangkalian mengalami kemurungan adalah rendah. Teruskan pemantauan dan sokongan</normal>.<br><br><i>Depression is not likely. Continue monitoring and support.</i>';
+    if(score <= 12) return 'Anda mungkin mengalami kemurungan. Sila pergi ke fasiliti kesihatan berhampiran untuk penilaian lanjut.<br><br><i>You may be experiencing depression. Kindly visit the nearest healthcare facility for further evaluation.</i>';
+    return 'Anda berkemungkinan besar mengalami kemurungan. Sila pergi ke fasiliti kesihatan berhampiran dalam masa terdekat untuk penilaian lanjut.<br><br><i>You are very likely to be experiencing depression. Please visit the nearest healthcare facility as soon as possible for further evaluation.</i>';
   }
 
   function highlightUnanswered(unanswered) {
@@ -397,6 +398,7 @@ enjoyment to things.</i></div>
 </div>
 </body>
 </html>
+
 
 
 
