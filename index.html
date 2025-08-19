@@ -29,7 +29,7 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
     border-radius: var(--radius); box-shadow: 0 6px 18px rgba(24,24,24,0.06);
     border: 1px solid #F7F8FA; }
 .qheader{
-    display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; margin: 0 auto; background-color: #E2E5EF; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 0; border-radius: var(--radius); }
+    display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; margin: 0 auto; background-color: #E2E5EF; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 0; border-radius: var(--radius); }
   .qnum{
     flex-shrink: 0;
     font-weight: bold; font-family: Helvetica; font-size: 16px; text-shadow: none; color: #383838; background: none:
@@ -360,7 +360,7 @@ button:hover{background-color: white ; color: #595959; }
     document.querySelectorAll('.qcard').forEach(c => c.style.borderColor = 'rgba(0,0,0,0.04)');
     unanswered.forEach(n => {
       const card = document.querySelector(`.qcard[data-q="${n}"]`);
-      if(card) card.style.borderColor = 'rgba(255,99,71,0.35)';
+      if(card) card.style.borderColor = 'rgba(255,0,0,0.7)';
     });
   }
 
@@ -395,6 +395,7 @@ button:hover{background-color: white ; color: #595959; }
 </div>
 </body>
 </html>
+
 
 
 
