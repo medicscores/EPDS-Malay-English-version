@@ -32,7 +32,10 @@
 }
      .textbox1 { display: block;  box-sizing: border-box;  border-radius:8px; margin-top: 5px; background-color: #C44536; color: #F8FAFF; font-family: Trebuchet MS; font-size: 15px; padding: 12px 8px; margin-bottom: 5px; width: 100%; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); }
     .textbox2 { display: block;  box-sizing: border-box; border-radius:8px; margin-top: 15px; background-color: #2c4a7a; color: #F8FAFF; font-family: Trebuchet MS; font-size: 15px; padding: 12px 8px; margin-bottom: 25px; width: 100%; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); }
+
 p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line-height: 1.2; }
+
+table { font-family: Arial, sans serif; font-size: 12px; }
     
     form.calc{
     display: block; margin: 0 auto; padding 10px 10px; 
@@ -65,7 +68,7 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
 .eng-option { display: block; margin-left: 45px; margin-bottom: 10px; }
     
   .option input[type="radio"]{
-    accent-color: #8CA3D2;  margin-right: 6px;
+    accent-color: #2c4a7a;  margin-right: 6px;
   margin-bottom: 2px; }
  
     
@@ -86,7 +89,7 @@ p { font-family: Arial, sans serif; font-size: 15px; margin: 0; padding: 0; line
     border-radius:10px;
     border:0; 
     cursor:pointer;
-    background: #8CA3D2;
+    background: #2c4a7a;
     color:white;
     font-weight:600; font-size: 16px; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);  
   }
@@ -94,12 +97,12 @@ button:hover{background-color: white ; color: #595959; }
   
 
   .resultBox{
-    pdisplay: block; padding: 12px 8px; font-size: 16px; 
-    border-radius:10px; box-sizing: border-box; 
-    background: #333333;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.04);
-    border:1px solid rgba(0,0,0,0.04); width: 100%; 
-    color: #F7F8FA; margin-bottom: 1px; }
+     pdisplay: block; padding: 12px 8px; font-size: 16px; 
+    border-radius:8px; box-sizing: border-box; 
+    background: white;
+    border: 1px solid #F7F8FA; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); width: 100%; 
+    color: #333333; margin-bottom: 1px; }
+
     .alert { margin-top: 20px; color: #b71c1c; font-family: Arial; font-size: 16px; font-weight: bold; width: 100%; box-sizing: border-box; border-radius:10px; background-color: #ffebee; padding: 10px; border: 1px solid #363535; border-color:#e3d8df; box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); }
 .num {width: 10px;
     text-align: top right; vertical-align: top;
@@ -330,32 +333,21 @@ button:hover{background-color: white ; color: #595959; }
       </div>
     </form>
 
-<p><strong>References:</strong></p>
-<table>
-  <tr>
-    <td class="num">1)</td>
-    <td>Cox, JL, Holden, JM, Sagovsky, R. Detection of postnatal depression: Development of the 10-item Edinburgh Postnatal Depression Scale. British Journal of Psychiatry. 1987: 150;782-786.</td>
-  </tr>
-  <tr>
-    <td class="num">2)</td>
-    <td>Wisner KL, Parry BL, Piontek CM. Postpartum Depression N Engl J Med.vol. 347, No 3, 2002:347(3).</td>
-  </tr>
-  <tr>
-    <td class="num">3)</td>
-    <td>Azidah AK, Rusli N, Shaiful BI, et al. Validation of the Malay Version of Edinburgh Postnatal Depression Scale for Postnatal Women in Kelantan, Malaysia. Asia Pacific Family Medicine.2004: 3 (1-2): 9-18(3).</td>
-  </tr>
-  <tr>
-    <td class="num">4)</td>
-    <td>Ministry of Health Malaysia, Clinical Practice Guidelines (CPG) Management of Major Depressive Disorder (2nd Edition). 2019.</td>
-  </tr>
-
-
-</table>
+<hr class="divider">
 <br>
 
-
-
-
+<p><strong>References:</strong></p>
+<table>
+  <tr><td>1) Cox, JL, Holden, JM, Sagovsky, R. Detection of postnatal depression: Development of the 10-item Edinburgh Postnatal Depression Scale. British Journal of Psychiatry. 1987: 150;782-786.</td>
+  </tr>
+  <tr><td>2) Wisner KL, Parry BL, Piontek CM. Postpartum Depression N Engl J Med.vol. 347, No 3, 2002:347(3).</td>
+  </tr>
+  <tr><td>3) Azidah AK, Rusli N, Shaiful BI, et al. Validation of the Malay Version of Edinburgh Postnatal Depression Scale for Postnatal Women in Kelantan, Malaysia. Asia Pacific Family Medicine.2004: 3 (1-2): 9-18(3).</td>
+  </tr>
+  <tr><td>4) Ministry of Health Malaysia, Clinical Practice Guidelines (CPG) Management of Major Depressive Disorder (2nd Edition). 2019.</td>
+  </tr>
+</table>
+<br>
 
 <script>
   const form = document.getElementById('calcForm');
