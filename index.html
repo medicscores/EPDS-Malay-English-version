@@ -6,8 +6,7 @@
 <title>Edinburgh Postnatal Depression Scale (EPDS)</title>
 <style>
 :root {--radius: 8px; }
-body, html { width: 100%; margin: 0; background: linear-gradient(180deg, #F8FAFF 0%, #F7F8FA 100%); color:var(--muted); }
-
+ body { max-width: 1150px; width:  100%; font-family: Arial, sans serif; font-size: 15px; margin: 0 auto; background: linear-gradient(180deg, #F8FAFF 0%, #F7F8FA 100%); color:var(--muted); }
     
     h2 { font-family: Verdana; font-size: 26px; color: #333333; margin: 0; padding-top: 20px; }
     h3 { font-family: Verdana; font-size: 24px; color: #333333; margin: 0; padding: 0; margin-bottom: 10px; }
@@ -97,26 +96,20 @@ button:hover{background-color: white ; color: #595959; }
 .divider { border: none; height: 2px; background-color: #ccc; margin: 20px 0; margin-bottom: 0; padding: 0; }
 
 
-.banner {
-    width: 100vw;
-    min-height: 150px;
-    box-sizing: border-box;
+.banner { width: 100%; margin: 0; height: 150px;
+    background:#2c4a7a; color: white; display: flex; flex-direction: row; align-items: center; text-align: center;
+  justify-content: center; gap: 15px; padding: 10px; }
 
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
 
-    padding: 15px 20px;
-
-    background: #2c4a7a;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
+.logo{
+    height:150px;
 }
-.logo{ height:150px; }
+
+
+.banner-text p{
+    margin:0;
+    font-size:16px;
+}
 
 @media screen and (max-width: 768px) {
     .header { flex-direction: column; height: auto; text-align: center; }
